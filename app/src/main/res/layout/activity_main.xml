@@ -7,23 +7,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/txthello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#E452A0"
-        android:text="Hello World!"
-        android:textColor="#263238"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/texthi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="23dp"
+        android:layout_marginStart="28dp"
         android:alpha="0"
         android:background="#F13D3D"
         android:text="Hi World"
@@ -31,5 +18,45 @@
         android:textSize="30sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/txthello"
         app:layout_constraintStart_toStartOf="@+id/txthello" />
+
+    <TextView
+        android:id="@+id/txthello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="70dp"
+        android:background="#E452A0"
+        android:text="Hello World!"
+        android:textColor="#263238"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imglion"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <ImageView
+        android:id="@+id/imglion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txthello"
+        app:srcCompat="@drawable/lion" />
+
+    <ImageView
+        android:id="@+id/imgleopard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txthello"
+        app:srcCompat="@drawable/leopard" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
